@@ -12,6 +12,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
+
 
 public class ActivityBase extends AppCompatActivity {
     Toolbar mToolbar;
