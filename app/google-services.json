@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788844289509",
+    "firebase_url": "https://awoddy-5a5b2-default-rtdb.firebaseio.com",
+    "project_id": "awoddy-5a5b2",
+    "storage_bucket": "awoddy-5a5b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788844289509:android:fa0b46ae97bb7b2c98630c",
+        "android_client_info": {
+          "package_name": "com.example.woddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788844289509-6ssd2ctd0oqro20oaot5dv6s27uen53g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.woddy",
+            "certificate_hash": "1ec07b12dbf489c31f510a96eb99a3360bb8a270"
+          }
+        },
+        {
+          "client_id": "788844289509-1hvgbt2963j9re109a52vqbf652u073k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoE8WKF28DA-ULs0c2mL0iNYky5uAP2qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788844289509-1hvgbt2963j9re109a52vqbf652u073k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
