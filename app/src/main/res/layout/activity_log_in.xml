@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/id_edit_text"
+            android:layout_width="320dp"
+            android:layout_height="37dp"
+            android:background="@drawable/edit_text_box"
+            android:hint="ID"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="320dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_box"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_round_shape"
+            android:text="로그인" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="34dp"
+                android:background="#494949" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp"
+                android:text="간편 로그인"
+                android:textColor="#494949" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="34dp"
+                android:background="#494949" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
