@@ -20,7 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
+/*
         TabHost tabHost = getTabHost();
 
         TabSpec tabSpecNotice1 = tabHost.newTabSpec("Notice1").setInicator("게시판1");
@@ -49,6 +49,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         ArrayAdapter<String> adpater = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listView1.setAdapter(adpater);
-
+*/
     }
+
+
 }
