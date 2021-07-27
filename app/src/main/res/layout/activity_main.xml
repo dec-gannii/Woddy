@@ -68,5 +68,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <Button
+        android:id="@+id/addWritingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Writings"
+        android:textSize="15dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search"
+        android:textSize="15dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_gravity="center" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

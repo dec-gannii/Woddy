@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cookandroid.woddy_addwritings_and_search.AddWritingsActivity;
+import com.cookandroid.woddy_addwritings_and_search.SearchActivity;
 import com.example.woddy.DB.FirebaseManager;
 import com.example.woddy.Entity.User;
 import com.google.firebase.database.DataSnapshot;
@@ -25,6 +27,7 @@ public class MainActivity extends ActivityBase {
     Button btnMoveToChatt;
     Button btnMoveToMyPage;
     Button btnLogin;
+    Button addWritingsBtn, searchBtn;
     TextView tvDBTest;   // Test용
     TextView btnDBTest;
 
@@ -40,11 +43,29 @@ public class MainActivity extends ActivityBase {
         btnMoveToMyPage = findViewById(R.id.btn_move_to_mypage);
         tvDBTest = findViewById(R.id.tv_dbtest);
         btnDBTest = findViewById(R.id.btn_dbtest);
+        addWritingsBtn = (Button) findViewById(R.id.addWritingBtn);
+        searchBtn = (Button) findViewById(R.id.searchBtn);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), LogInActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        addWritingsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddWritingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
                 startActivity(intent);
             }
         });
