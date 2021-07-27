@@ -11,10 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cookandroid.woddy_addwritings_and_search.AddWritingsActivity;
-import com.cookandroid.woddy_addwritings_and_search.SearchActivity;
-import com.example.woddy.DB.FirebaseManager;
-import com.example.woddy.Entity.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

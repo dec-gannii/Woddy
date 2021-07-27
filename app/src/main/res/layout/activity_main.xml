@@ -72,22 +72,32 @@
         android:id="@+id/addWritingBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Writings"
-        android:textSize="15dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
+        android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:layout_gravity="center" />
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Add Writings"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/btn_move_to_mypage" />
 
     <Button
         android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="search"
-        android:textSize="15dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
+        android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:layout_gravity="center" />
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:text="search"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addWritingBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_move_to_chatt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

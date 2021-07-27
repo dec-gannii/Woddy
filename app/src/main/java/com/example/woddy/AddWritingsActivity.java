@@ -1,4 +1,4 @@
-package com.cookandroid.woddy_addwritings_and_search;
+package com.example.woddy;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
