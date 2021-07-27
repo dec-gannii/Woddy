@@ -1,11 +1,21 @@
 package com.example.woddy.DB;
 
+import androidx.annotation.NonNull;
+
+import com.example.woddy.ChattingRoom;
 import com.example.woddy.Entity.ChattingMsg;
 import com.example.woddy.Entity.ChattingInfo;
 import com.example.woddy.Entity.User;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
 
 public class FirebaseManager {
     // Realtime Database이용
@@ -27,6 +37,19 @@ public class FirebaseManager {
                 .child(user.getNickName()).setValue(user);
     }
 
+    public void updateUser() {
+
+
+        //Query query = database.child("/chattingRoom/CR0000001");
+        //database = FirebaseDatabase.getInstance().getReference("")
+        //String string1 = database.child("chattingRoom/CR0000001/messages/").push().getKey().toString();
+
+        //ciValue = user.toMap();
+        //ciChildUpdate.put("/user/" + user.getNickName(), ciValue);
+        //database.updateChildren(ciChildUpdate);
+
+    }
+
     public void addChattingRoom(ChattingInfo chatInfo) {
         //ciValue = chatInfo.toMap();
         //ciChildUpdate.put("/chattingRoom/" + chatInfo.getRoomNumber(), ciValue);
@@ -37,6 +60,7 @@ public class FirebaseManager {
 
     }
 
+    // 채팅방 내부에 대화 추가
     public void addChattingChat(ChattingMsg chatChat) {
         //database = database.child("/chattingRoom/" + chatChat.getRoomNum() + "/messages/");
         //ciValue = chatChat.toMap();
@@ -47,14 +71,13 @@ public class FirebaseManager {
                 .child("messages")
                 .push().setValue(chatChat);
     }
-/*
-    public ChattingMsg getChat(String roomNum) {
-        Query select = FirebaseDatabase.getInstance().getReference()
-                .child("chattingRoom")
-                .child(roomNum)
-                .child("messages").orderByChild("writtenTime");
-    }
-*/
+
+
+    // 사용자 채팅방리스트에 있는 채팅방들 찾기
+
+
+    // 채팅방 참가자에 맞는 대화목록 찾기
+
 
         /*
     // Cloud Firestore 아용
