@@ -13,6 +13,7 @@ public class LogInActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_AppCompat_Light);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
         idEditText = findViewById(R.id.id_edit_text);
