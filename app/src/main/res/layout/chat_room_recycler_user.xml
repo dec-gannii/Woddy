@@ -14,7 +14,7 @@
         android:layout_toLeftOf="@+id/chatroom_user_image">
 
         <TextView
-            android:id="@+id/user_conversation"
+            android:id="@+id/user_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
