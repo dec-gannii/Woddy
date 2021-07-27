@@ -24,6 +24,7 @@ import org.jetbrains.annotations.NotNull;
 public class MainActivity extends ActivityBase {
     Button btnMoveToChatt;
     Button btnMoveToMyPage;
+    Button btnLogin;
     TextView tvDBTest;   // Test용
     TextView btnDBTest;
 
@@ -34,10 +35,19 @@ public class MainActivity extends ActivityBase {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnLogin = findViewById(R.id.btn_Login);
         btnMoveToChatt = findViewById(R.id.btn_move_to_chatt);
         btnMoveToMyPage = findViewById(R.id.btn_move_to_mypage);
         tvDBTest = findViewById(R.id.tv_dbtest);
         btnDBTest = findViewById(R.id.btn_dbtest);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), LogInActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnDBTest.setOnClickListener(new View.OnClickListener() {
             @Override
