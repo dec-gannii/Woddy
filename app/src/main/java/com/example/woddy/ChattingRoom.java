@@ -56,7 +56,7 @@ public class ChattingRoom extends ActivityBase{
         String user = "userB";
 
         initDatabase();
-        Toast.makeText(getApplicationContext(), firebaseManager.getChat().get(0), Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), firebaseManager.getChat().get(0), Toast.LENGTH_LONG).show();
         //firebaseManager.updateUser();
 
         // xml 연결
